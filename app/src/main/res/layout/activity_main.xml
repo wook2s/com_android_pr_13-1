@@ -47,7 +47,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/tvMP3"
@@ -55,10 +56,18 @@
             android:layout_height="wrap_content"
             android:text="재생중인 음악" />
 
-        <ProgressBar
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:text="진행시간 : "
+            android:layout_height="wrap_content" />
+
+        <SeekBar
             android:id="@+id/pbMP3"
+            style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="invisible" />
+            android:visibility="visible" />
+
     </LinearLayout>
 </LinearLayout>
